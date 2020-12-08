@@ -1,39 +1,17 @@
-#include <stdio.h>
 
-char animation[] =
-   R"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-X                                                                                        X
-X                                                                                        X
-X                                                                                        X
-X                                                                               | o |    X
-X                                                                               | o |    X
-X                                                                               | o |    X
-X                                                                               | o |    X
-X                                                                               | o |    X
-X                                                                               | o |    X
-X         | |         | |         | |                                           | o |    X
-X         | |         | |         | |   [X ]                                    | o |    X
-X         |o|         |o|         |o|     ||                                    | o |    X
-X         / /         / /         / /     ||            [/\]                    | o |    X
-X    --|-/ /----|----/ /----|----/ /-------------|------//\\---------|----------    |    X
-X              >         >         >         >         //  \\      >  \             |    X
-X    --|--------|-----------|--------------------|------\   \--------|--------------     X
-X                                                        \   \                           X
-X                                                         \   \                          X
-X                                                          \   \                         X
-X                                                           \   \                        X
-X                                                            \   \                       X
-X                                                             \   \                      X
-X                                                              \   \                     X
-X                                                               \   \                    X
-X                                                                                        X
-X                                                                                        X
-X                                                                                        X
-X                                                                                        X
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+#include <stdbool.h>
+
+#define IO_PRINT false
+#define HOEHENMESSER_PRINT false
+#define MAGAZIN_PRINT false
+#define BEREICHE_PRINT false
+
+#include "mock_io.h"
+#include "io.h"
+#include "fancy_task.c"
 
 int main() {
-    printf("Hello, World!\n");
-
+    fancy_task_main(0);
+    scanf("%s", NULL);
     return 0;
 }
