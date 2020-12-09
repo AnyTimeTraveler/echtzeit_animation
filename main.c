@@ -11,7 +11,7 @@
 #include "fancy_task.c"
 
 int main() {
-    fancy_task_main(0);
-    scanf("%s", NULL);
+    fancy_task_main(9);
+//    scanf("%s", NULL);
     return 0;
 }
